@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आपली सह्याद्री</title>
+   <style>
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Darker text for better readability */
+    padding: 20px;
+    margin: 0;
+    line-height: 1.7;
+}
+
+h {
+    color: #2c3e50; /* Dark blue-gray */
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #5cb85c, #377d3b); /* More vibrant green gradient */
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    font-family: 'Noto Serif Devanagari', serif; /* Elegant Marathi font (ensure it's linked or available) */
+    font-size: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+ 
+/* Sub-heading */
+h5 {
+    color: #d35400; /* Orange accent color */
+    text-align: center;
+    font-style: italic;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+/* Fort Section Styles */
+.fort {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.fort:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.fort h2 {
+    color: #800000;
+    font-size: 1.8em;
+    font-weight: bold;
+    border-bottom: 3px solid #800000;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.fort img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fort p {
+    font-size: 1em;
+    color: #555;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.fort p1 {
+    font-size: 1em;
+    color: #555;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.fort strong {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.fort ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.fort li {
+    font-size: 1em;
+    color: #555;
+    list-style-type: disc;
+    margin-bottom: 5px;
+}
+
+.fort a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+.fort a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Table Styles */
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #6b4226;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+td a {
+    color: #d35400;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+td a:hover {
+    color: #e67e22;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+        width: 100%;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        content: attr(data-column);
+    }
+}
+.video-container {
+      width: 640px;
+      margin: 20px auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .video-container:hover {
+      transform: scale(1.02);
+    }
+
+    video {
+      width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+.image-container {
+            display: flex;
+        }
+        .image-container img { 
+            width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);/* Adjust as needed */
+        }
+h4 {
+    color: #e4405f; /* Instagram pink */
+    margin-top: 20px;
+}
+
+h6 {
+    color: orangered; 
+    font-size: 20px;
+}
+
+.instagram-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+.instagram-link:hover {
+    color: #e4405f;
+}
+
+.instagram-link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.rating-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+}
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.stars span {
+    font-size: 25px;
+    color: #aaa;
+    transition: color 0.2s;
+}
+.stars span:hover, .stars span.active {
+    color: gold;
+}
+#ratingsDisplay {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.delete-btn:hover {
+    background: darkred;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40; /* Dark gray footer */
+    color: white;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin: 0;
+}
+</style>
+    </head>
+
+<body>
+    
+<header>
+    <h1>आपली सह्याद्री</h1>
+</header>
+
+<h5 style="color: #6b4226; text-align: center;">🏰 किल्ल्यांची यादी 🏰</h5>
+<table>
+    
+    <tr>
+        <td><a href="rajgad.html">राजगड किल्ला</a></td>
+        <td><a href="raigad.html">रायगड किल्ला</a></td>
+        <td><a href="shivneri.html">शिवनेरी किल्ला</a></td>
+        <td><a href="sinhgad.html">सिंहगड किल्ला</a></td>
+        <td><a href="torna.html">तोरणा किल्ला</a></td>
+    </tr>
+    <tr>
+        <td><a href="harishchandra.html">हरिश्चंद्रगड किल्ला</a></td>
+        <td><a href="purandar.html">पुरंदर किल्ला</a></td>
+        <td><a href="lohgad.html">लोहगड किल्ला</a></td>
+        <td><a href="rajmachi.html">राजमाची किल्ला</a></td>
+        <td><a href="pratapgad.html">प्रतापगड किल्ला</a></td>
+    </tr>
+</table><br>
+       
+<h>सह्याद्री </h>
+    <p>सह्याद्री पर्वतरांग ही केवळ निसर्गसंपन्नता आणि जैवविविधतेसाठीच प्रसिद्ध नाही, तर ती ऐतिहासिक, सांस्कृतिक आणि पर्यावरणीय दृष्टिकोनातूनही महत्त्वाची आहे.
+        <br><div class="video-container">
+    <video controls>
+      <source src="k.mp4" type="video/mp4">
+    </video>
+  </div>
+    <div class="image-container">
+        <img src="1.jpg" alt=" 1">
+        <img src="2.jpg" alt=" 2">
+    </div>
+        <br>
+<h6>सह्याद्री पर्वतरांगेचे ऐतिहासिक महत्त्व:</h6>
+<strong>- मराठा साम्राज्याचा किल्ल्यांचा गड:</strong> छत्रपती शिवाजी महाराजांनी सह्याद्रीच्या दुर्गम भागात अनेक किल्ले बांधले, जसे की राजगड, रायगड, प्रतापगड, तोरणा आणि सिंहगड. हे किल्ले मराठा साम्राज्याच्या संरक्षणासाठी आणि रणनीतीसाठी महत्त्वाचे होते.<br>
+<strong>- बौद्ध लेणी:</strong> या पर्वतरांगेत कान्हेरी, कार्ला, भाजे आणि अजिंठा-वेरूळ सारखी प्राचीन बौद्ध लेणी आढळतात, ज्यात सुंदर शिल्पकला आणि वास्तुकला आहे.<br>
+<strong>- प्राचीन व्यापार मार्ग:</strong> सह्याद्री पर्वतरांग ही प्राचीन काळी व्यापार मार्गासाठी वापरली जात होती. कोकण आणि दख्खनच्या पठारी भागाला जोडणारे घाटमार्ग आजही वापरले जातात.<br><br>
+<h6>सह्याद्रीतील जैवविविधता आणि पर्यावरणीय महत्त्व:</h6>
+<strong>- युनेस्को जागतिक वारसा स्थळ:</strong> पश्चिम घाटाला युनेस्कोने जागतिक वारसा स्थळाचा दर्जा दिला आहे आणि हे जगातील आठ जैवविविधता हॉटस्पॉट्सपैकी एक आहे.<br>
+<strong>- वन्यजीव आणि वनस्पती:</strong> येथे बंगाल वाघ, भारतीय हत्ती, गव्य, मलबार गिलहरी, सह्याद्री गिधाड यांसारखे दुर्मिळ प्राणी आढळतात. तसेच कुंद, सोनकी, करवी यांसारख्या स्थानिक वनस्पतीही येथे आढळतात.<br>
+<strong>- सह्याद्री व्याघ्र प्रकल्प:</strong> महाराष्ट्रातील सह्याद्री व्याघ्र प्रकल्प हा वाघांच्या संरक्षणासाठी महत्त्वाचा आहे.<br><br>
+<h6>सह्याद्रीतील पर्यटन आणि साहस:</h6>
+<strong>- ट्रेकिंग आणि गिर्यारोहण:</strong> हरिश्चंद्रगड, राजगड, लोणावळा, महाबळेश्वर आणि कोयना अभयारण्य हे ट्रेकिंगसाठी प्रसिद्ध आहेत.<br>
+<strong>- धबधबे आणि निसर्गरम्य स्थळे:</strong> कुंडलिका धबधबा, ताम्हिणी घाट, भंडारदरा आणि कोयना धरण हे पर्यटकांचे आवडते ठिकाण आहे.<br>
+<strong>- आकाशदर्शन आणि निसर्ग अभ्यास:</strong> सह्याद्री पर्वतरांग ही आकाशदर्शनासाठी उत्तम ठिकाण आहे. येथे अनेक निसर्ग अभ्यास शिबिरे आयोजित केली जातात.
+<br><br>
+<h4>आमची इंस्टाग्राम आयडी</h4>
+<a href="https://www.instagram.com/_rahullya_26?igsh=bWY1cTRvbmVrdHJr" target="_blank"><br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" width="30">
+    _rahullya_26
+</a>
+<br>
+<a href="https://www.instagram.com/_sopan_xyz_25_?igsh=MTc2c2ZmMWRmbmJxNw==" target="_blank"><br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" width="30">
+    sopan_xyz_25
+</a>
+<br>
+<h4 align='center'>⭐ रेटिंग द्या ⭐</h4>
+<div class="rating-container">
+    <form id="ratingForm">
+        <label for="name">👤 तुमचे नाव:</label>
+        <input type="text" id="name" name="name" placeholder="तुमचे नाव लिहा" required>
+        <br>
+        <br>
+        <label for="rating">🌟 रेटिंग निवडा:</label>
+        <div class="stars">
+            <span data-value="1">★</span>
+            <span data-value="2">★</span>
+            <span data-value="3">★</span>
+            <span data-value="4">★</span>
+            <span data-value="5">★</span>
+        </div>
+        <input type="hidden" id="ratingValue" name="rating">
+
+        <button type="submit">सादर करा</button>
+    </form>
+</div>
+
+<!-- Display Ratings Section with Delete Option -->
+<h5>🔽 रेटिंग्स पहा 🔽</h5>
+<div id="ratingsDisplay"></div>
+
+<script>
+document.querySelectorAll(".stars span").forEach(star => {
+    star.addEventListener("click", function() {
+        let value = this.getAttribute("data-value");
+        document.getElementById("ratingValue").value = value;
+
+        document.querySelectorAll(".stars span").forEach(s => s.classList.remove("active"));
+        this.classList.add("active");
+    });
+});
+
+document.getElementById("ratingForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let rating = document.getElementById("ratingValue").value;
+
+    if (!rating) {
+        alert("कृपया रेटिंग निवडा!");
+        return;
+    }
+
+    let displayDiv = document.getElementById("ratingsDisplay");
+
+    // Clear previous ratings and refresh dynamically
+    displayDiv.innerHTML = "";
+
+    let newRating = document.createElement("div");
+    newRating.setAttribute("data-name", name);
+    newRating.innerHTML = `<strong>${name}</strong> ने ${"★".repeat(rating)} रेटिंग दिली! <button class="delete-btn">हटवा</button>`;
+    
+    newRating.querySelector(".delete-btn").addEventListener("click", function() {
+        let userName = prompt("तुमचे नाव टाका रेटिंग हटवण्यासाठी:");
+        if (userName === newRating.getAttribute("data-name")) {
+            newRating.remove();
+        } else {
+            alert("तुम्ही ही रेटिंग दिली नाही, त्यामुळे ती हटवू शकत नाही!");
+        }
+    });
+
+    displayDiv.appendChild(newRating);
+    
+    // Reset form fields
+    document.getElementById("name").value = "";
+    document.querySelectorAll(".stars span").forEach(s => s.classList.remove("active"));
+
+    alert(`धन्यवाद ${name}, तुम्ही ${rating} स्टार दिले आहेत!`);
+});
+</script>
+<br>
+
+<footer>
+<p align='center'>© 2025 आपली सह्याद्री. सर्व हक्क राखीव.</p>
+</footer>
+</body>
+</html>
